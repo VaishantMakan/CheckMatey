@@ -8,3 +8,7 @@ A chess webapp where you can connect with your friends or strangers to play the 
 - typescript
 - ws : a node.js WebSocket library
 - React for frontend
+
+#### Future things to be added
+
+- grpc server implementation
