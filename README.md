@@ -12,3 +12,4 @@ A chess webapp where you can connect with your friends or strangers to play the 
 #### Future things to be added
 
 - grpc server implementation
+- Add the timer clock logic
