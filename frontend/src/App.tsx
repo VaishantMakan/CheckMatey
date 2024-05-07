@@ -6,7 +6,7 @@ import { Game } from './screens/Game';
 function App() {
 
   return (
-    <div className='bg-zinc-800 h-screen'>
+    <div className='h-screen bg-zinc-800'>
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Landing />} />
