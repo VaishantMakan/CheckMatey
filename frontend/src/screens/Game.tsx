@@ -19,7 +19,7 @@ export const Game = () => {
         if(!socket)
             return;
 
-        socket.onmessage = (event) => {
+        socket.onmessage = (event) => { //this handler is hit when server sends data to client side via socket.send(data)
             const message = JSON.parse(event.data); //TODO: Check this
             console.log(message);
             console.log(message.type);

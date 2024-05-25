@@ -31,7 +31,7 @@ export const ChessBoard = ({chess, setBoard ,socket, board} : {
                             setFrom(squareRepresentation);
                         } else {
                             // setTo(square?.square ?? null);
-                            socket.send(JSON.stringify({
+                            socket.send(JSON.stringify({ //This will call => socket.on('message', (data) => {} method defined on the server side
                                 type: MOVE,
                                 payload: {
                                     move: {
@@ -42,7 +42,7 @@ export const ChessBoard = ({chess, setBoard ,socket, board} : {
                             }))
 
                             setFrom(null);
-                            chess.move({
+                            chess.move({ // updates the board for the current player's frontend
                                 from: from,
                                 to: squareRepresentation
                             });

@@ -5,7 +5,7 @@ import { Game } from "./Game";
 export class GameManager {
 
     private games: Game[];
-    private pendingUser: WebSocket | null;
+    private pendingUser: WebSocket | null; //not a list/queue bcuz at any given point there can be only one pending user since 2 player game
     private users: WebSocket[];
 
     constructor() {

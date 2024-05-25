@@ -19,7 +19,7 @@ export class Game {
 
         //let the players know that the game has started
 
-        this.player1.send(JSON.stringify({
+        this.player1.send(JSON.stringify({ //this will call => socket.onmessage = (event) => { } method defined on the client side
             type: INIT_GAME,
             payload: {
                 color: "white"
@@ -63,7 +63,7 @@ export class Game {
         if(this.board.isGameOver()) {
             //send the game over message to both the players
             
-            this.player1.emit(JSON.stringify({
+            this.player1.emit(JSON.stringify({ //this will call => socket.onmessage = (event) => { } method defined on the client side
                 type: GAME_OVER,
                 payload: {
                     winner: this.board.turn() === "w" ? "black" : "white"
@@ -84,8 +84,10 @@ export class Game {
         console.log(this.board.ascii());
         //If game not over then send the updated board to both the players
 
+        //since here for one player, the board has been updated, but this player's move will not be visible to 
+        //other player yet, so we send the current player's move to the other player also to update their board.
         if(this.moveCount % 2 === 0) {
-            this.player2.send(JSON.stringify({
+            this.player2.send(JSON.stringify({ 
                 type: MOVE,
                 payload: move
             }));
