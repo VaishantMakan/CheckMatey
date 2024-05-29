@@ -1,7 +1,7 @@
 import { WebSocket } from "ws";
 import { INIT_GAME, JOIN_GAME, MOVE } from "./messages";
 import { Game } from "./Game";
-import db from "./db";
+import {db} from "./db";
 
 export class GameManager {
 

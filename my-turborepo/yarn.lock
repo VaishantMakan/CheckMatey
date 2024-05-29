@@ -410,6 +410,11 @@
   resolved "https://registry.npmjs.org/@prisma/client/-/client-5.14.0.tgz"
   integrity sha512-akMSuyvLKeoU4LeyBAUdThP/uhVP3GuLygFE3MlYzaCb3/J8SfsYBE5PkaFuLuVpLyA6sFoW+16z/aPhNAESqg==
 
+"@prisma/client@5.12.1":
+  version "5.12.1"
+  resolved "https://registry.npmjs.org/@prisma/client/-/client-5.12.1.tgz"
+  integrity sha512-6/JnizEdlSBxDIdiLbrBdMW5NqDxOmhXAJaNXiPpgzAPr/nLZResT6MMpbOHLo5yAbQ1Vv5UU8PTPRzb0WIxdA==
+
 "@prisma/debug@5.14.0":
   version "5.14.0"
   resolved "https://registry.npmjs.org/@prisma/debug/-/debug-5.14.0.tgz"
@@ -450,6 +455,12 @@
   version "1.16.1"
   resolved "https://registry.npmjs.org/@remix-run/router/-/router-1.16.1.tgz"
   integrity sha512-es2g3dq6Nb07iFxGk5GuHN20RwBZOsuDQN7izWIisUcv9r+d2C5jQxqmgkdebXgReWfiyUabcki6Fg77mSNrig==
+
+"@repo/db@file:/Users/vaishantmakan/Library/Mobile Documents/com~apple~CloudDocs/Work/OpenSource/My GitHub Repos Projects/CheckMatey/my-turborepo/packages/db":
+  version "1.0.0"
+  resolved "file:packages/db"
+  dependencies:
+    "@prisma/client" "^5.12.1"
 
 "@repo/eslint-config@*", "@repo/eslint-config@file:/Users/vaishantmakan/Library/Mobile Documents/com~apple~CloudDocs/Work/OpenSource/My GitHub Repos Projects/CheckMatey/my-turborepo/packages/eslint-config":
   version "0.0.0"
@@ -4155,7 +4166,7 @@ prettier@^3.2.5, "prettier@>= 1.16.0", "prettier@>=3.0.0 <4":
   resolved "https://registry.npmjs.org/prettier/-/prettier-3.2.5.tgz"
   integrity sha512-3/GWa9aOC0YeD7LUfvOG2NiDyhOWRvt1k+rcKhOuYnMY24iiCphgneUfJDyFXd6rZCAnuLBv6UeAULtrhT/F4A==
 
-prisma@*, prisma@^5.14.0:
+prisma@*, prisma@^5.12.0, prisma@^5.14.0:
   version "5.14.0"
   resolved "https://registry.npmjs.org/prisma/-/prisma-5.14.0.tgz"
   integrity sha512-gCNZco7y5XtjrnQYeDJTiVZmT/ncqCr5RY1/Cf8X2wgLRmyh9ayPAGBNziI4qEE4S6SxCH5omQLVo9lmURaJ/Q==
@@ -5098,6 +5109,8 @@ turbo-darwin-64@1.13.3:
 
 turbo@latest:
   version "1.13.3"
+  resolved "https://registry.npmjs.org/turbo/-/turbo-1.13.3.tgz"
+  integrity sha512-n17HJv4F4CpsYTvKzUJhLbyewbXjq1oLCi90i5tW1TiWDz16ML1eDG7wi5dHaKxzh5efIM56SITnuVbMq5dk4g==
   optionalDependencies:
     turbo-darwin-64 "1.13.3"
     turbo-darwin-arm64 "1.13.3"
